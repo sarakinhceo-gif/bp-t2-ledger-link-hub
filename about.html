@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="서울 지역의 접대, 회식, 모임 장소 선정을 돕는 로컬 큐레이터 K의 전문성과 블로그 운영 철학을 소개합니다. 데이터 기반의 심층 분석을 통해 최적의 선택을 안내합니다.">
+    <meta name="keywords" content="접대 장소 추천, 회식 장소, 모임 장소, 서울 정보 블로그, 셔츠룸, 룸싸롱, 텐프로, 텐카페, 쩜오, 하이퍼블릭, 풀싸롱, 가라오케, 노래방, 비즈니스클럽, 마사지, 펍, 로컬 큐레이터 K, 블로그 소개">
+    <meta name="author" content="로컬 큐레이터 K">
+    <title>서울 접대 장소 추천 | 로컬 큐레이터 K 소개</title>
+    <link rel="canonical" href="https://ledger.link-hub.org/about.html">
+    <meta property="og:title" content="로컬 큐레이터 K: 서울 접대 장소 전문가의 시선">
+    <meta property="og:description" content="서울 유흥 및 비즈니스 접대 문화에 대한 깊이 있는 이해와 객관적인 분석을 제공하는 로컬 큐레이터 K의 소개 페이지입니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ledger.link-hub.org/about.html">
+    <meta property="og:image" content="https://ledger.link-hub.org/og-image.jpg">
+    <!-- CSS 핵심은 이전 페이지와 동일하게 유지됩니다. -->
+    <style>
+        /* raw-concrete Design System */
+        :root {
+            --color-primary-dark: #222;
+            --color-primary-light: #f0f0f0;
+            --color-accent-red: #e74c3c;
+            --color-accent-blue: #3498db;
+            --font-family-sans: 'Arial', sans-serif;
+            --font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            --spacing-unit: 8px;
+            --border-width-thick: 3px;
+            --border-width-thin: 1px;
+            --shadow-brutalist: 4px 4px 0px var(--color-primary-dark);
+            --header-height: 60px;
+        }
+
+        /* Reset and Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--color-primary-dark);
+            background-color: var(--color-primary-light);
+            font-family: var(--font-family-sans);
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-sans);
+            color: var(--color-primary-dark);
+            margin-bottom: var(--spacing-unit) * 2;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: var(--border-width-thick) solid var(--color-primary-dark);
+            padding-bottom: var(--spacing-unit);
+            display: inline-block;
+            margin-bottom: var(--spacing-unit) * 4;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-left: var(--border-width-thick) solid var(--color-accent-red);
+            padding-left: var(--spacing-unit);
+            margin-bottom: var(--spacing-unit) * 3;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--color-accent-blue);
+            margin-bottom: var(--spacing-unit) * 2;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-unit);
+        }
+
+        p {
+            margin-bottom: var(--spacing-unit) * 2;
+        }
+
+        a {
+            color: var(--color-accent-blue);
+            text-decoration: none;
+            border-bottom: var(--border-width-thin) solid var(--color-accent-blue);
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: var(--color-accent-red);
+            border-color: var(--color-accent-red);
+            background-color: var(--color-primary-dark);
+            color: var(--color-primary-light);
+            box-shadow: var(--shadow-brutalist);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul, ol {
+            margin-left: var(--spacing-unit) * 3;
+            margin-bottom: var(--spacing-unit) * 2;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        ol {
+            list-style: decimal;
+        }
+
+        li {
+            margin-bottom: var(--spacing-unit);
+        }
+
+        /* Layout and Component Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-unit) * 2;
+        }
+
+        header {
+            background-color: var(--color-primary-dark);
+            color: var(--color-primary-light);
+            padding: var(--spacing-unit) * 2 0;
+            border-bottom: var(--border-width-thick) solid var(--color-accent-red);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Added for responsiveness */
+        }
+
+        header h1 {
+            color: var(--color-primary-light);
+            margin: 0;
+            font-size: 1.8rem;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        header h1 a {
+            color: var(--color-primary-light);
+            border-bottom: none;
+        }
+
+        header h1 a:hover {
+            color: var(--color-accent-red);
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            flex-wrap: wrap; /* Added for responsiveness */
+            justify-content: center; /* Center nav items on smaller screens */
+        }
+
+        nav ul li {
+            margin-left: var(--spacing-unit) * 2;
+            margin-bottom: var(--spacing-unit); /* For wrapping items */
+        }
+
+        nav ul li a {
+            color: var(--color-primary-light);
+            text-decoration: none;
+            padding: var(--spacing-unit) var(--spacing-unit) * 1.5;
+            border: var(--border-width-thin) solid var(--color-primary-light);
+            transition: all 0.2s ease-in-out;
+            display: block; /* Make links block for better click area */
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: var(--color-accent-red);
+            color: var(--color-primary-light);
+            border-color: var(--color-accent-red);
+            box-shadow: var(--shadow-brutalist);
+        }
+
+        main {
+            flex-grow: 1;
+            padding: var(--spacing-unit) * 4 0;
+        }
+
+        section {
+            background-color: var(--color-primary-light);
+            padding: var(--spacing-unit) * 4 0;
+            border-bottom: var(--border-width-thin) dashed var(--color-primary-dark);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .card {
+            background-color: #fff;
+            border: var(--border-width-thick) solid var(--color-primary-dark);
+            box-shadow: var(--shadow-brutalist);
+            padding: var(--spacing-unit) * 3;
+            margin-bottom: var(--spacing-unit) * 4;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-var(--spacing-unit) / 2);
+            box-shadow: var(--shadow-brutalist), 0 0 0 2px var(--color-accent-blue);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-unit) * 4;
+        }
+
+        .text-block {
+            background-color: #fff;
+            border: var(--border-width-thin) solid var(--color-primary-dark);
+            padding: var(--spacing-unit) * 2;
+            margin-bottom: var(--spacing-unit) * 2;
+        }
+
+        footer {
+            background-color: var(--color-primary-dark);
+            color: var(--color-primary-light);
+            padding: var(--spacing-unit) * 3 0;
+            text-align: center;
+            border-top: var(--border-width-thick) solid var(--color-accent-blue);
+            margin-top: var(--spacing-unit) * 4;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--color-accent-blue);
+            border-color: var(--color-accent-blue);
+        }
+
+        footer a:hover {
+            color: var(--color-primary-light);
+            background-color: var(--color-accent-blue);
+            box-shadow: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                margin-bottom: var(--spacing-unit) * 3;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header h1 {
+                margin-bottom: var(--spacing-unit) * 2;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+            }
+
+            nav ul li {
+                margin: 0 0 var(--spacing-unit) 0;
+                width: 100%;
+            }
+
+            nav ul li a {
+                border-left: none;
+                border-right: none;
+                border-radius: 0;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/">LEDGER.LINK-HUB.ORG</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/room-salon">룸싸롱</a></li>
+                    <li><a href="/ten-pro">텐프로</a></li>
+                    <li><a href="/hyper-public">하이퍼블릭</a></li>
+                    <li><a href="/full-salon">풀싸롱</a></li>
+                    <li><a href="/karaoke">가라오케</a></li>
+                    <li><a href="/massage">마사지</a></li>
+                    <li><a href="/pub">펍</a></li>
+                    <li><a href="/about" class="active">소개</a></li>
+                    <li><a href="/contact">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <h2>서울 접대 문화, 전문가의 시선으로 분석하다</h2>
+                <div class="text-block">
+                    <p>본 블로그는 서울의 복잡하고 다층적인 접대, 회식, 모임 문화를 깊이 있게 이해하고, 독자 여러분께 가장 적합한 장소를 제안하고자 개설되었습니다. 로컬 큐레이터 K는 단순한 정보 나열을 넘어, 객관적인 데이터와 현장 경험을 바탕으로 신뢰할 수 있는 가이드를 제공합니다.</p>
+                    <p>급변하는 서울의 비즈니스 및 사교 환경 속에서 올바른 장소 선정은 성공적인 만남의 초석이 됩니다. 저희는 이러한 중요성을 인지하고, 각 상황에 최적화된 정보를 제공함으로써 여러분의 시간과 노력을 절약해 드립니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="expertise-section">
+            <div class="container">
+                <h3>로컬 큐레이터 K: 전문성의 근거</h3>
+                <div class="text-block">
+                    <p>다년간 서울 유흥 및 비즈니스 접대 산업 현장에서 축적된 경험은 로컬 큐레이터 K의 가장 강력한 자산입니다. 셔츠룸, 룸싸롱, 텐프로, 텐카페, 쩜오, 하이퍼블릭, 풀싸롱, 가라오케, 노래방, 비즈니스클럽, 마사지, 펍 등 각 업종의 미묘한 차이와 운영 철학을 꿰뚫고 있으며, 이를 바탕으로 각 상황에 최적화된 선택지를 제시합니다.</p>
+                    <p>저희의 전문성은 단순한 지식을 넘어, 실제 방문 경험과 업계 관계자들과의 꾸준한 소통을 통해 형성됩니다. 이를 통해 얻은 심층적인 인사이트는 다른 곳에서는 찾기 어려운 독점적인 가치를 제공합니다.</p>
+                </div>
+                <div class="card">
+                    <h4>핵심 전문 분야</h4>
+                    <ul>
+                        <li>업종별 심층 분석: 각 비즈니스 모델의 특징과 장단점 명확화</li>
+                        <li>상황별 맞춤 추천: 접대 목적, 예산, 인원수, 선호 분위기 등 다각적 고려</li>
+                        <li>최신 트렌드 반영: 시장 변화와 새로운 플레이스에 대한 지속적 모니터링 및 업데이트</li>
+                        <li>객관적 정보 제공: 과장 없이 사실에 기반한 정보 전달 및 비교 분석</li>
+                        <li>윤리적 접근: 건전하고 합리적인 선택을 위한 정보 제공 원칙 준수</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-section">
+            <div class="container">
+                <h3>블로그 운영 철학: 신뢰와 가치</h3>
+                <div class="text-block">
+                    <p>본 블로그는 투명하고 객관적인 정보 제공을 최우선 가치로 삼습니다. 특정 업소에 대한 편향된 홍보를 지양하며, 독자 여러분이 합리적이고 현명한 결정을 내릴 수 있도록 돕는 것을 목표로 합니다. 서울의 다양한 접대 문화를 이해하고, 성공적인 비즈니스 및 사교 활동을 위한 길잡이가 되겠습니다.</p>
+                    <p>저희는 정보의 신뢰도가 무엇보다 중요하다고 생각합니다. 따라서 모든 콘텐츠는 엄격한 검증 과정을 거쳐 발행되며, 변화하는 정보에 대해서는 즉각적인 업데이트를 통해 최신성을 유지합니다. 로컬 큐레이터 K는 여러분의 성공적인 비즈니스와 즐거운 모임을 위한 든든한 파트너가 될 것을 약속드립니다.</p>
+                </div>
+                <p>궁금한 점이나 특정 상황에 대한 조언이 필요하시면 언제든 <a href="/contact">문의</a>해 주십시오. 로컬 큐레이터 K가 축적된 지식으로 성심껏 답변해 드리겠습니다.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 LEDGER.LINK-HUB.ORG. All rights reserved.</p>
+            <p>본 블로그는 서울의 접대 및 유흥 문화에 대한 정보 제공을 목적으로 합니다. 모든 정보는 참고용으로만 활용하시기 바랍니다.</p>
+            <p><a href="/privacy-policy">개인정보처리방침</a> | <a href="/terms-of-service">이용약관</a></p>
+        </div>
+    </footer>
+</body>
+</html>
