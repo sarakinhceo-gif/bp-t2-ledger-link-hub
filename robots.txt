@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ledger.link-hub.org/sitemap.xml
+Sitemap: https://ledger.link-hub.org/sitemap-pages.xml

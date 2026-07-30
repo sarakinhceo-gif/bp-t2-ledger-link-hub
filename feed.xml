@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[서울 접대 장소 추천]]></title>
+  <title><![CDATA[정보 블로그]]></title>
   <link>https://ledger.link-hub.org</link>
-  <description><![CDATA[서울 정보 블로그 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Sun, 26 Jul 2026 11:46:23 GMT</pubDate>
-  <lastBuildDate>Sun, 26 Jul 2026 11:46:23 GMT</lastBuildDate>
+  <description><![CDATA[정보 블로그 - 접대 장소 추천 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Sun, 26 Jul 2026 16:51:34 GMT</pubDate>
+  <lastBuildDate>Sun, 26 Jul 2026 16:51:34 GMT</lastBuildDate>
   <atom:link href="https://ledger.link-hub.org/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[서울 접대 장소 추천 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://ledger.link-hub.org/</link>
-      <guid isPermaLink="true">https://ledger.link-hub.org/</guid>
-      <description><![CDATA[서울 정보 블로그 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Sun, 26 Jul 2026 11:46:23 GMT</pubDate>
+      <title><![CDATA[접대 장소 추천 현장에서 확인한 선택 기준과 주의점]]></title>
+      <link>https://ledger.link-hub.org/posts/field_note-002-1taih90.html</link>
+      <guid isPermaLink="true">https://ledger.link-hub.org/posts/field_note-002-1taih90.html</guid>
+      <description><![CDATA[안녕하세요! 어떤 작업을 도와드릴까요? [지시] 내용을 말씀해주시면 안내해 드리겠습니다. 을지로 비즈니스클럽]]></description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[정보 블로그 해결 방법 총정리 — 전문가가 알려주는 5가지 팁]]></title>
+      <link>https://ledger.link-hub.org/posts/guide-001-9lciey.html</link>
+      <guid isPermaLink="true">https://ledger.link-hub.org/posts/guide-001-9lciey.html</guid>
+      <description><![CDATA[안녕하세요! 요청해주신 내용([지시])에 대해 자세히 설명해 주시면, 바로 도와드리도록 하겠습니다. 어떤 작업(웹 애플리케이션 개발, 코드 수정/디버깅, 데이터 분석, 기획 등)을 진행하고 싶으신지 편하게 말씀해 주세요! 신사 룸싸롱]]></description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[접대 장소 추천 vs 접대 장소 추천 비교 — 어디가 더 좋을까? 비교 분석]]></title>
+      <link>https://ledger.link-hub.org/posts/major_compare-003-1g4jaiv.html</link>
+      <guid isPermaLink="true">https://ledger.link-hub.org/posts/major_compare-003-1g4jaiv.html</guid>
+      <description><![CDATA[안녕하세요! 사용자님의 요청에 도움을 드리겠습니다. 현재 `[지시]`에 구체적인 내용이 입력되지 않은 것 같습니다. 구체적으로 어떤 작업(예: 웹 애플리케이션 개발, 코드 작성, 디버깅, 질문 답변 등)을 원하시는지 알려주시면 최선을 다해 도와드리겠습니다! 신사 룸싸롱]]></description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[접대 장소 추천에 대한 통념과 실제 차이를 검토했다]]></title>
+      <link>https://ledger.link-hub.org/posts/myth-005-1k42a8c.html</link>
+      <guid isPermaLink="true">https://ledger.link-hub.org/posts/myth-005-1k42a8c.html</guid>
+      <description><![CDATA[사용자님의 요청 사항이 `[지시]`로 비어 있거나 누락되어 있는 것 같습니다. 어떤 작업을 도와드릴까요? 개발하고자 하는 앱, 수정할 코드, 분석할 내용 등에 대해 구체적으로 말씀해 주시면 빠르게 도와드리겠습니다! 신사 룸싸롱]]></description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[접대 장소 추천 관련 질문을 상황별로 정리해봤다]]></title>
+      <link>https://ledger.link-hub.org/posts/qa-004-p2pueh.html</link>
+      <guid isPermaLink="true">https://ledger.link-hub.org/posts/qa-004-p2pueh.html</guid>
+      <description><![CDATA[안녕하세요! 요청하신 내용에 `[지시]`라는 디렉티브/템플릿 문구만 포함되어 있어, 어떤 작업을 진행해야 하는지 구체적인 내용을 파악하지 못했습니다. 원하시는 작업(예: 웹 애플리케이션 개발, 특정 코드 작성, 버그 수정, 데이터 분석 등)에 대한 세부 지시 사항을 입]]></description>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
