@@ -31,7 +31,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ledger.link-hub.org/posts/field_note-005-1oombm3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ledger.link-hub.org/posts/guide-001-9lciey.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ledger.link-hub.org/posts/guide-004-112uydj.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ledger.link-hub.org/posts/major_compare-001-ng3uij.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -41,7 +56,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ledger.link-hub.org/posts/myth-003-l86i4x.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ledger.link-hub.org/posts/myth-005-1k42a8c.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ledger.link-hub.org/posts/qa-002-1oo2omx.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

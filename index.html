@@ -1,857 +1,855 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <meta name="description" content="서울 지역의 접대, 회식, 모임에 적합한 장소를 상황별로 엄선하여 추천하는 정보 블로그. 다양한 업종의 특징과 선택 기준을 명확하게 안내합니다.">
-    <meta name="keywords" content="접대 장소 추천, 회식 장소, 모임 장소, 서울 정보 블로그, 셔츠룸, 룸싸롱, 텐프로, 텐카페, 쩜오, 하이퍼블릭, 풀싸롱, 가라오케, 노래방, 비즈니스클럽, 마사지, 펍">
-    <meta name="author" content="로컬 큐레이터 K">
-    <title>접대 장소 추천 — 상황별 최적의 공간 찾기 가이드</title>
-    <link rel="canonical" href="https://ledger.link-hub.org/">
-    <meta property="og:title" content="접대 장소 추천 — 상황별 최적의 공간 찾기 가이드">
-    <meta property="og:description" content="서울 지역의 접대, 회식, 모임에 적합한 장소를 상황별로 엄선하여 추천하는 정보 블로그. 다양한 업종의 특징과 선택 기준을 명확하게 안내합니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ledger.link-hub.org/">
-    <meta property="og:site_name" content="접대 장소 추천 블로그">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="접대 장소 추천 — 상황별 최적의 공간 찾기 가이드">
-    <meta name="twitter:description" content="서울 지역의 접대, 회식, 모임에 적합한 장소를 상황별로 엄선하여 추천하는 정보 블로그. 다양한 업종의 특징과 선택 기준을 명확하게 안내합니다.">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "접대 장소 선택 시 가장 중요하게 고려해야 할 요소는 무엇인가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "가장 중요한 것은 '목적'과 '참석자'입니다. 누구를 위한 자리인지, 어떤 분위기를 연출하고 싶은지에 따라 적합한 업종과 공간이 달라집니다. 사전에 명확한 기준을 세우는 것이 중요합니다."
-        }
-      }, {
-        "@type": "Question",
-        "name": "다양한 업종의 차이점을 어떻게 구분할 수 있나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "각 업종은 제공하는 서비스의 성격, 분위기, 이용 목적 등에서 고유한 특징을 가집니다. 저희 블로그에서는 각 업종별 특징을 명확히 비교 분석하여, 목적에 맞는 장소를 쉽게 선택하실 수 있도록 돕습니다."
-        }
-      }, {
-        "@type": "Question",
-        "name": "예약이나 특정 업소 추천 없이 정보를 얻을 수 있나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "네, 본 블로그는 특정 업소나 지역을 홍보하는 목적이 아닌, 순수 정보 제공에 초점을 맞추고 있습니다. 전화번호 안내나 예약 유도 없이 객관적인 정보만을 제공합니다."
-        }
-      }]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "접대 장소 추천 블로그",
-      "url": "https://ledger.link-hub.org/",
-      "author": {
-        "@type": "Person",
-        "name": "로컬 큐레이터 K",
-        "description": "서울 지역의 다양한 접대 및 모임 공간 정보를 5년간 전문적으로 분석하고 큐레이션해온 경험을 바탕으로 객관적인 정보를 제공합니다."
-      },
-      "about": {
-        "@type": "Thing",
-        "name": "접대 장소 추천"
-      }
-    }
-    </script>
-    <style>
-        /* raw-concrete Design System */
-        :root {
-            --primary-color: #1a1a1a;
-            --secondary-color: #e5e5e5;
-            --accent-color: #ff6b35;
-            --text-color: var(--primary-color);
-            --bg-color: var(--secondary-color);
-            --border-color: var(--primary-color);
-            --system-mono: 'Menlo', 'Consolas', 'Monaco', 'Liberation Mono', 'Lucida Console', monospace;
-            --impact-stack: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-            --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            --heading-font: var(--impact-stack);
-            --body-font: var(--font-family);
-            --border-width: 3px;
-            --border-style: solid;
-            --border-radius: 2px;
-            --gap: 16px;
-            --padding: 24px;
-            --section-gap: 40px;
-        }
-
-        /* Reset and Base Styles */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            font-size: 16px;
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--body-font);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--heading-font);
-            font-weight: bold;
-            margin-bottom: var(--gap);
-            line-height: 1.2;
-        }
-
-        h1 { font-size: 3.5rem; }
-        h2 { font-size: 2.5rem; }
-        h3 { font-size: 1.8rem; }
-        h4 { font-size: 1.4rem; }
-
-        p {
-            margin-bottom: var(--gap);
-        }
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            border-bottom: var(--border-width) var(--border-style) var(--accent-color);
-        }
-        a:hover {
-            background-color: var(--accent-color);
-            color: var(--bg-color);
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        ul, ol {
-            margin-left: calc(var(--gap) * 2);
-            margin-bottom: var(--gap);
-        }
-
-        ul { list-style: disc; }
-        ol { list-style: decimal; }
-
-        section {
-            padding: var(--padding) 0;
-            margin-bottom: var(--section-gap);
-            position: relative; /* For full bleed */
-        }
-
-        .m-img-3spl {
-            width: 100%;
-            max-width: 1600px; /* Adjust as needed for desired full bleed */
-            margin: 0 auto;
-            padding: 0 var(--padding);
-        }
-
-        /* Header */
-        .x-top-31ex {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: var(--padding) 0;
-            border-bottom: var(--border-width) var(--border-style) var(--accent-color);
-            margin-bottom: var(--section-gap);
-        }
-
-        .x-top-31ex .m-img-3spl {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .k-hero-oyqb-title {
-            font-size: 2rem;
-            font-family: var(--impact-stack);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0;
-            display: flex;
-            align-items: center;
-        }
-        .k-hero-oyqb-title span {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--primary-color);
-            padding: 0 8px;
-            margin-right: 8px;
-            transform: skewX(-10deg);
-        }
-
-        .x-head-a7we {
-            margin-left: auto; /* Pushes nav to the right */
-        }
-
-        .x-head-a7we-list {
-            list-style: none;
-            display: flex;
-            gap: var(--gap);
-            margin-bottom: 0;
-        }
-
-        .x-head-a7we-item a {
-            color: var(--secondary-color);
-            border-bottom: none;
-            padding: 4px 0;
-            position: relative;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-        }
-        .x-head-a7we-item a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: var(--border-width);
-            background-color: var(--accent-color);
-            transform: scaleX(0);
-            transition: transform 0.2s ease-in-out;
-        }
-        .x-head-a7we-item a:hover::after {
-            transform: scaleX(1);
-        }
-
-        .t-main-yfyo-nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 2rem;
-            color: var(--secondary-color);
-            cursor: pointer;
-        }
-
-        /* Hero Section */
-        .k-ico-juw6 {
-            text-align: center;
-            padding: calc(var(--section-gap) * 2) 0;
-            position: relative;
-            overflow: hidden;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            border-bottom: var(--border-width) var(--border-style) var(--accent-color);
-        }
-
-        .k-ico-juw6::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, rgba(255,107,53,0.1) 0%, rgba(255,107,53,0) 50%, rgba(255,107,53,0.1) 100%);
-            opacity: 0.3;
-            z-index: 0;
-            pointer-events: none;
-            transform: skewX(-15deg);
-        }
-
-        .k-ico-juw6 h1 {
-            font-size: 4rem;
-            margin-bottom: var(--gap);
-            letter-spacing: -1px;
-            position: relative;
-            z-index: 1;
-            transform: rotate(-0.5deg);
-        }
-
-        .k-ico-juw6 p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto var(--gap);
-            position: relative;
-            z-index: 1;
-            color: var(--secondary-color);
-            opacity: 0.9;
-        }
-
-        /* Content Sections */
-        .k-head-s518-title {
-            font-size: 2rem;
-            margin-bottom: var(--gap);
-            border-bottom: var(--border-width) var(--border-style) var(--accent-color);
-            padding-bottom: 8px;
-            display: inline-block;
-            transform: skewX(-5deg);
-            margin-bottom: var(--section-gap);
-        }
-
-        /* Category List */
-        .x-side-rlxj-list {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--gap);
-            margin-bottom: var(--section-gap);
-        }
-
-        .x-side-rlxj-item {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: var(--padding);
-            border: var(--border-width) var(--border-style) var(--accent-color);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            transform: rotate(0.5deg);
-        }
-        .x-side-rlxj-item:hover {
-            transform: translateY(-5px) rotate(0.5deg);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        .x-side-rlxj-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: var(--gap);
-            color: var(--accent-color);
-        }
-
-        .x-side-rlxj-item p {
-            font-size: 0.95rem;
-            opacity: 0.8;
-            margin-bottom: 0;
-        }
-
-        /* Post Snippets */
-        .x-card-rjtu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--section-gap);
-        }
-
-        .x-card-rjtu-item {
-            background-color: var(--secondary-color);
-            padding: var(--padding);
-            border: var(--border-width) var(--border-style) var(--primary-color);
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            transform: skewX(1deg) skewY(-0.5deg);
-        }
-        .x-card-rjtu-item:hover {
-            transform: skewX(1deg) skewY(-0.5deg) translateY(-5px);
-            box-shadow: 5px 5px 0 var(--accent-color);
-        }
-
-        .x-card-rjtu-title {
-            font-size: 1.8rem;
-            margin-bottom: var(--gap);
-            font-family: var(--impact-stack);
-            color: var(--primary-color);
-            transform: skewX(-2deg);
-        }
-
-        .x-card-rjtu-meta {
-            font-size: 0.85rem;
-            color: var(--primary-color);
-            opacity: 0.7;
-            margin-bottom: var(--gap);
-            display: block;
-        }
-
-        .x-card-rjtu-excerpt {
-            font-size: 1rem;
-            color: var(--primary-color);
-            opacity: 0.85;
-            margin-bottom: var(--gap);
-        }
-
-        .x-card-rjtu-link {
-            display: inline-block;
-            font-weight: bold;
-            color: var(--primary-color);
-            border-bottom: var(--border-width) var(--border-style) var(--accent-color);
-        }
-        .x-card-rjtu-link:hover {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-        }
-
-        /* Selection Criteria Section */
-        .k-wrap-af6c-section {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            border: var(--border-width) var(--border-style) var(--accent-color);
-            padding: var(--padding);
-            margin-bottom: var(--section-gap);
-            position: relative;
-            transform: skewX(-1deg);
-        }
-        .k-wrap-af6c-section::before {
-            content: 'CRITERIA';
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-family: var(--system-mono);
-            font-size: 0.8rem;
-            color: var(--accent-color);
-            opacity: 0.5;
-            transform: rotate(90deg);
-        }
-
-        .k-wrap-af6c-title {
-            font-size: 2rem;
-            margin-bottom: var(--gap);
-            color: var(--accent-color);
-            transform: skewX(2deg);
-        }
-
-        .k-wrap-af6c-list {
-            list-style: none;
-            padding-left: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--gap);
-        }
-
-        .k-wrap-af6c-item {
-            padding: var(--gap);
-            border-left: var(--border-width) var(--border-style) var(--accent-color);
-            font-size: 1.1rem;
-            opacity: 0.9;
-            transform: skewX(1deg);
-        }
-        .k-wrap-af6c-item:nth-child(odd) {
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-
-        /* Before You Go Section */
-        .x-nav-yx4o-section {
-            background-color: var(--accent-color);
-            color: var(--primary-color);
-            padding: var(--padding);
-            margin-bottom: var(--section-gap);
-            border: var(--border-width) var(--border-style) var(--primary-color);
-            transform: rotate(0.3deg);
-        }
-
-        .x-nav-yx4o-title {
-            font-size: 2rem;
-            margin-bottom: var(--gap);
-            color: var(--primary-color);
-            font-family: var(--impact-stack);
-            transform: skewX(-3deg);
-        }
-
-        .x-nav-yx4o-list {
-            list-style: none;
-            padding-left: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--gap);
-        }
-
-        .x-nav-yx4o-item {
-            background-color: var(--bg-color);
-            padding: var(--padding);
-            border: var(--border-width) var(--border-style) var(--primary-color);
-            font-size: 1rem;
-            opacity: 0.9;
-            box-shadow: 3px 3px 0 var(--primary-color);
-        }
-
-        /* FAQ Section */
-        .v-hero-ivf2-section {
-            background-color: var(--secondary-color);
-            padding: var(--padding) 0;
-            border-top: var(--border-width) var(--border-style) var(--accent-color);
-            border-bottom: var(--border-width) var(--border-style) var(--accent-color);
-            margin-bottom: var(--section-gap);
-        }
-
-        .v-hero-ivf2-item {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: var(--padding);
-            border: var(--border-width) var(--border-style) var(--accent-color);
-            margin-bottom: var(--gap);
-            transform: skewX(-0.5deg);
-        }
-        .v-hero-ivf2-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .v-hero-ivf2-question {
-            font-size: 1.4rem;
-            margin-bottom: var(--gap);
-            color: var(--accent-color);
-            font-weight: bold;
-            font-family: var(--impact-stack);
-            transform: skewX(1deg);
-        }
-
-        .v-hero-ivf2-answer {
-            font-size: 1rem;
-            opacity: 0.8;
-            line-height: 1.7;
-        }
-
-        /* Author Bio */
-        .k-main-ib8m-bio {
-            background-color: var(--secondary-color);
-            border: var(--border-width) var(--border-style) var(--primary-color);
-            padding: var(--padding);
-            margin-top: var(--section-gap);
-            margin-bottom: var(--gap);
-            display: flex;
-            align-items: center;
-            gap: var(--gap);
-            transform: rotate(-0.2deg);
-            box-shadow: -3px -3px 0 var(--accent-color);
-        }
-
-        .k-main-ib8m-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            font-family: var(--impact-stack);
-            margin-bottom: 0;
-        }
-
-        .k-main-ib8m-description {
-            font-size: 0.95rem;
-            color: var(--primary-color);
-            opacity: 0.85;
-            margin-bottom: 0;
-        }
-
-        /* Footer */
-        .t-body-09ee {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: var(--padding) 0;
-            text-align: center;
-            margin-top: auto; /* Pushes footer to the bottom */
-            border-top: var(--border-width) var(--border-style) var(--accent-color);
-        }
-
-        .t-body-09ee p {
-            margin-bottom: 0;
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.8rem; }
-            h2 { font-size: 2rem; }
-            h3 { font-size: 1.5rem; }
-
-            .x-top-31ex .m-img-3spl {
-                flex-direction: column;
-                gap: var(--gap);
-            }
-
-            .k-hero-oyqb-title {
-                width: 100%;
-                justify-content: center;
-                margin-bottom: var(--gap);
-            }
-
-            .x-head-a7we {
-                margin-left: 0;
-                width: 100%;
-            }
-
-            .x-head-a7we-list {
-                flex-direction: column;
-                align-items: center;
-                gap: calc(var(--gap) / 2);
-            }
-
-            .t-main-yfyo-nav-toggle {
-                display: block;
-                position: absolute;
-                top: 50%;
-                right: var(--padding);
-                transform: translateY(-50%);
-            }
-
-            .x-top-31ex .x-head-a7we {
-                display: none; /* Hide desktop nav by default on mobile */
-                width: 100%;
-            }
-
-            .x-top-31ex .x-head-a7we.x-head-a7we-open {
-                display: block;
-            }
-
-            .k-ico-juw6 h1 {
-                font-size: 3rem;
-            }
-
-            .k-ico-juw6 p {
-                font-size: 1rem;
-            }
-
-            .x-card-rjtu-grid,
-            .x-side-rlxj-list,
-            .x-nav-yx4o-list {
-                grid-template-columns: 1fr;
-            }
-
-            .k-wrap-af6c-list {
-                grid-template-columns: 1fr;
-            }
-
-            .k-wrap-af6c-item {
-                border-left: none;
-                border-bottom: var(--border-width) var(--border-style) var(--accent-color);
-                padding-bottom: var(--gap);
-                margin-bottom: var(--gap);
-                transform: none;
-            }
-            .k-wrap-af6c-item:last-child {
-                margin-bottom: 0;
-                border-bottom: none;
-            }
-            .k-wrap-af6c-section {
-                transform: none;
-            }
-            .k-wrap-af6c-section::before {
-                transform: none;
-                top: 5px;
-                right: 5px;
-                opacity: 0.3;
-            }
-
-            .k-main-ib8m-bio {
-                flex-direction: column;
-                text-align: center;
-                transform: none;
-                box-shadow: 3px 3px 0 var(--accent-color);
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="서울 지역의 접대, 회식, 모임에 적합한 장소를 상황별로 엄선하여 추천하는 정보 블로그. 다양한 업종의 특징과 선택 기준을 명확하게 안내합니다.">
+ <meta name="keywords" content="접대 장소 추천, 회식 장소, 모임 장소, 서울 정보 블로그, 셔츠룸, 룸싸롱, 텐프로, 텐카페, 쩜오, 하이퍼블릭, 풀싸롱, 가라오케, 노래방, 비즈니스클럽, 마사지, 펍">
+ <meta name="author" content="로컬 큐레이터 K">
+ <title>접대 장소 추천 — 상황별 최적의 공간 찾기 가이드</title>
+ <link rel="canonical" href="https://ledger.link-hub.org/">
+ <meta property="og:title" content="접대 장소 추천 — 상황별 최적의 공간 찾기 가이드">
+ <meta property="og:description" content="서울 지역의 접대, 회식, 모임에 적합한 장소를 상황별로 엄선하여 추천하는 정보 블로그. 다양한 업종의 특징과 선택 기준을 명확하게 안내합니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://ledger.link-hub.org/">
+ <meta property="og:site_name" content="접대 장소 추천 블로그">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="접대 장소 추천 — 상황별 최적의 공간 찾기 가이드">
+ <meta name="twitter:description" content="서울 지역의 접대, 회식, 모임에 적합한 장소를 상황별로 엄선하여 추천하는 정보 블로그. 다양한 업종의 특징과 선택 기준을 명확하게 안내합니다.">
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [{
+ "@type": "Question",
+ "name": "접대 장소 선택 시 가장 중요하게 고려해야 할 요소는 무엇인가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "가장 중요한 것은 '목적'과 '참석자'입니다. 누구를 위한 자리인지, 어떤 분위기를 연출하고 싶은지에 따라 적합한 업종과 공간이 달라집니다. 사전에 명확한 기준을 세우는 것이 중요합니다."
+ }
+ }, {
+ "@type": "Question",
+ "name": "다양한 업종의 차이점을 어떻게 구분할 수 있나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "각 업종은 제공하는 서비스의 성격, 분위기, 이용 목적 등에서 고유한 특징을 가집니다. 저희 블로그에서는 각 업종별 특징을 명확히 비교 분석하여, 목적에 맞는 장소를 쉽게 선택하실 수 있도록 돕습니다."
+ }
+ }, {
+ "@type": "Question",
+ "name": "예약이나 특정 업소 추천 없이 정보를 얻을 수 있나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "네, 본 블로그는 특정 업소나 지역을 홍보하는 목적이 아닌, 순수 정보 제공에 초점을 맞추고 있습니다. 전화번호 안내나 예약 유도 없이 객관적인 정보만을 제공합니다."
+ }
+ }]
+ }
+ </script>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Blog",
+ "name": "접대 장소 추천 블로그",
+ "url": "https://ledger.link-hub.org/",
+ "author": {
+ "@type": "Person",
+ "name": "로컬 큐레이터 K",
+ "description": "서울 지역의 다양한 접대 및 모임 공간 정보를 5년간 전문적으로 분석하고 큐레이션해온 경험을 바탕으로 객관적인 정보를 제공합니다."
+ },
+ "about": {
+ "@type": "Thing",
+ "name": "접대 장소 추천"
+ }
+ }
+ </script>
+ <style>
+ /* raw-concrete Design System */
+ :root {
+ --primary-color: #1a1a1a;
+ --secondary-color: #e5e5e5;
+ --accent-color: #ff6b35;
+ --text-color: var(--primary-color);
+ --bg-color: var(--secondary-color);
+ --border-color: var(--primary-color);
+ --system-mono: 'Menlo', 'Consolas', 'Monaco', 'Liberation Mono', 'Lucida Console', monospace;
+ --impact-stack: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+ --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ --heading-font: var(--impact-stack);
+ --body-font: var(--font-family);
+ --border-width: 3px;
+ --border-style: solid;
+ --border-radius: 2px;
+ --gap: 16px;
+ --padding: 24px;
+ --section-gap: 40px;
+ }
+
+ /* Reset and Base Styles */
+ *, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ html {
+ font-size: 16px;
+ line-height: 1.6;
+ scroll-behavior: smooth;
+ }
+
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ font-family: var(--body-font);
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+ font-family: var(--heading-font);
+ font-weight: bold;
+ margin-bottom: var(--gap);
+ line-height: 1.2;
+ }
+
+ h1 { font-size: 3.5rem; }
+ h2 { font-size: 2.5rem; }
+ h3 { font-size: 1.8rem; }
+ h4 { font-size: 1.4rem; }
+
+ p {
+ margin-bottom: var(--gap);
+ }
+
+ a {
+ color: var(--accent-color);
+ text-decoration: none;
+ border-bottom: var(--border-width) var(--border-style) var(--accent-color);
+ }
+ a:hover {
+ background-color: var(--accent-color);
+ color: var(--bg-color);
+ text-decoration: none;
+ }
+
+ img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+
+ ul, ol {
+ margin-left: calc(var(--gap) * 2);
+ margin-bottom: var(--gap);
+ }
+
+ ul { list-style: disc; }
+ ol { list-style: decimal; }
+
+ section {
+ padding: var(--padding) 0;
+ margin-bottom: var(--section-gap);
+ position: relative; /* For full bleed */
+ }
+
+ .m-img-3spl {
+ width: 100%;
+ max-width: 1600px; /* Adjust as needed for desired full bleed */
+ margin: 0 auto;
+ padding: 0 var(--padding);
+ }
+
+ /* Header */
+ .x-top-31ex {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ padding: var(--padding) 0;
+ border-bottom: var(--border-width) var(--border-style) var(--accent-color);
+ margin-bottom: var(--section-gap);
+ }
+
+ .x-top-31ex .m-img-3spl {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+
+ .k-hero-oyqb-title {
+ font-size: 2rem;
+ font-family: var(--impact-stack);
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ margin-bottom: 0;
+ display: flex;
+ align-items: center;
+ }
+ .k-hero-oyqb-title span {
+ display: inline-block;
+ background-color: var(--accent-color);
+ color: var(--primary-color);
+ padding: 0 8px;
+ margin-right: 8px;
+ transform: skewX(-10deg);
+ }
+
+ .x-head-a7we {
+ margin-left: auto; /* Pushes nav to the right */
+ }
+
+ .x-head-a7we-list {
+ list-style: none;
+ display: flex;
+ gap: var(--gap);
+ margin-bottom: 0;
+ }
+
+ .x-head-a7we-item a {
+ color: var(--secondary-color);
+ border-bottom: none;
+ padding: 4px 0;
+ position: relative;
+ text-transform: uppercase;
+ font-weight: bold;
+ letter-spacing: 0.5px;
+ }
+ .x-head-a7we-item a::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: var(--border-width);
+ background-color: var(--accent-color);
+ transform: scaleX(0);
+ transition: transform 0.2s ease-in-out;
+ }
+ .x-head-a7we-item a:hover::after {
+ transform: scaleX(1);
+ }
+
+ .t-main-yfyo-nav-toggle {
+ display: none;
+ background: none;
+ border: none;
+ font-size: 2rem;
+ color: var(--secondary-color);
+ cursor: pointer;
+ }
+
+ /* Hero Section */
+ .k-ico-juw6 {
+ text-align: center;
+ padding: calc(var(--section-gap) * 2) 0;
+ position: relative;
+ overflow: hidden;
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ border-bottom: var(--border-width) var(--border-style) var(--accent-color);
+ }
+
+ .k-ico-juw6::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(to right, rgba(255,107,53,0.1) 0%, rgba(255,107,53,0) 50%, rgba(255,107,53,0.1) 100%);
+ opacity: 0.3;
+ z-index: 0;
+ pointer-events: none;
+ transform: skewX(-15deg);
+ }
+
+ .k-ico-juw6 h1 {
+ font-size: 4rem;
+ margin-bottom: var(--gap);
+ letter-spacing: -1px;
+ position: relative;
+ z-index: 1;
+ transform: rotate(-0.5deg);
+ }
+
+ .k-ico-juw6 p {
+ font-size: 1.2rem;
+ max-width: 700px;
+ margin: 0 auto var(--gap);
+ position: relative;
+ z-index: 1;
+ color: var(--secondary-color);
+ opacity: 0.9;
+ }
+
+ /* Content Sections */
+ .k-head-s518-title {
+ font-size: 2rem;
+ margin-bottom: var(--gap);
+ border-bottom: var(--border-width) var(--border-style) var(--accent-color);
+ padding-bottom: 8px;
+ display: inline-block;
+ transform: skewX(-5deg);
+ margin-bottom: var(--section-gap);
+ }
+
+ /* Category List */
+ .x-side-rlxj-list {
+ list-style: none;
+ padding: 0;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: var(--gap);
+ margin-bottom: var(--section-gap);
+ }
+
+ .x-side-rlxj-item {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ padding: var(--padding);
+ border: var(--border-width) var(--border-style) var(--accent-color);
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ position: relative;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ transform: rotate(0.5deg);
+ }
+ .x-side-rlxj-item:hover {
+ transform: translateY(-5px) rotate(0.5deg);
+ box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+ }
+
+ .x-side-rlxj-item h3 {
+ font-size: 1.5rem;
+ margin-bottom: var(--gap);
+ color: var(--accent-color);
+ }
+
+ .x-side-rlxj-item p {
+ font-size: 0.95rem;
+ opacity: 0.8;
+ margin-bottom: 0;
+ }
+
+ /* Post Snippets */
+ .x-card-rjtu-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: var(--section-gap);
+ }
+
+ .x-card-rjtu-item {
+ background-color: var(--secondary-color);
+ padding: var(--padding);
+ border: var(--border-width) var(--border-style) var(--primary-color);
+ position: relative;
+ overflow: hidden;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ transform: skewX(1deg) skewY(-0.5deg);
+ }
+ .x-card-rjtu-item:hover {
+ transform: skewX(1deg) skewY(-0.5deg) translateY(-5px);
+ box-shadow: 5px 5px 0 var(--accent-color);
+ }
+
+ .x-card-rjtu-title {
+ font-size: 1.8rem;
+ margin-bottom: var(--gap);
+ font-family: var(--impact-stack);
+ color: var(--primary-color);
+ transform: skewX(-2deg);
+ }
+
+ .x-card-rjtu-meta {
+ font-size: 0.85rem;
+ color: var(--primary-color);
+ opacity: 0.7;
+ margin-bottom: var(--gap);
+ display: block;
+ }
+
+ .x-card-rjtu-excerpt {
+ font-size: 1rem;
+ color: var(--primary-color);
+ opacity: 0.85;
+ margin-bottom: var(--gap);
+ }
+
+ .x-card-rjtu-link {
+ display: inline-block;
+ font-weight: bold;
+ color: var(--primary-color);
+ border-bottom: var(--border-width) var(--border-style) var(--accent-color);
+ }
+ .x-card-rjtu-link:hover {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ }
+
+ /* Selection Criteria Section */
+ .k-wrap-af6c-section {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ border: var(--border-width) var(--border-style) var(--accent-color);
+ padding: var(--padding);
+ margin-bottom: var(--section-gap);
+ position: relative;
+ transform: skewX(-1deg);
+ }
+ .k-wrap-af6c-section::before {
+ content: 'CRITERIA';
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ font-family: var(--system-mono);
+ font-size: 0.8rem;
+ color: var(--accent-color);
+ opacity: 0.5;
+ transform: rotate(90deg);
+ }
+
+ .k-wrap-af6c-title {
+ font-size: 2rem;
+ margin-bottom: var(--gap);
+ color: var(--accent-color);
+ transform: skewX(2deg);
+ }
+
+ .k-wrap-af6c-list {
+ list-style: none;
+ padding-left: 0;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: var(--gap);
+ }
+
+ .k-wrap-af6c-item {
+ padding: var(--gap);
+ border-left: var(--border-width) var(--border-style) var(--accent-color);
+ font-size: 1.1rem;
+ opacity: 0.9;
+ transform: skewX(1deg);
+ }
+ .k-wrap-af6c-item:nth-child(odd) {
+ background-color: rgba(255, 255, 255, 0.05);
+ }
+
+ /* Before You Go Section */
+ .x-nav-yx4o-section {
+ background-color: var(--accent-color);
+ color: var(--primary-color);
+ padding: var(--padding);
+ margin-bottom: var(--section-gap);
+ border: var(--border-width) var(--border-style) var(--primary-color);
+ transform: rotate(0.3deg);
+ }
+
+ .x-nav-yx4o-title {
+ font-size: 2rem;
+ margin-bottom: var(--gap);
+ color: var(--primary-color);
+ font-family: var(--impact-stack);
+ transform: skewX(-3deg);
+ }
+
+ .x-nav-yx4o-list {
+ list-style: none;
+ padding-left: 0;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: var(--gap);
+ }
+
+ .x-nav-yx4o-item {
+ background-color: var(--bg-color);
+ padding: var(--padding);
+ border: var(--border-width) var(--border-style) var(--primary-color);
+ font-size: 1rem;
+ opacity: 0.9;
+ box-shadow: 3px 3px 0 var(--primary-color);
+ }
+
+ /* FAQ Section */
+ .v-hero-ivf2-section {
+ background-color: var(--secondary-color);
+ padding: var(--padding) 0;
+ border-top: var(--border-width) var(--border-style) var(--accent-color);
+ border-bottom: var(--border-width) var(--border-style) var(--accent-color);
+ margin-bottom: var(--section-gap);
+ }
+
+ .v-hero-ivf2-item {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ padding: var(--padding);
+ border: var(--border-width) var(--border-style) var(--accent-color);
+ margin-bottom: var(--gap);
+ transform: skewX(-0.5deg);
+ }
+ .v-hero-ivf2-item:last-child {
+ margin-bottom: 0;
+ }
+
+ .v-hero-ivf2-question {
+ font-size: 1.4rem;
+ margin-bottom: var(--gap);
+ color: var(--accent-color);
+ font-weight: bold;
+ font-family: var(--impact-stack);
+ transform: skewX(1deg);
+ }
+
+ .v-hero-ivf2-answer {
+ font-size: 1rem;
+ opacity: 0.8;
+ line-height: 1.7;
+ }
+
+ /* Author Bio */
+ .k-main-ib8m-bio {
+ background-color: var(--secondary-color);
+ border: var(--border-width) var(--border-style) var(--primary-color);
+ padding: var(--padding);
+ margin-top: var(--section-gap);
+ margin-bottom: var(--gap);
+ display: flex;
+ align-items: center;
+ gap: var(--gap);
+ transform: rotate(-0.2deg);
+ box-shadow: -3px -3px 0 var(--accent-color);
+ }
+
+ .k-main-ib8m-name {
+ font-size: 1.2rem;
+ font-weight: bold;
+ color: var(--primary-color);
+ font-family: var(--impact-stack);
+ margin-bottom: 0;
+ }
+
+ .k-main-ib8m-description {
+ font-size: 0.95rem;
+ color: var(--primary-color);
+ opacity: 0.85;
+ margin-bottom: 0;
+ }
+
+ /* Footer */
+ .t-body-09ee {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ padding: var(--padding) 0;
+ text-align: center;
+ margin-top: auto; /* Pushes footer to the bottom */
+ border-top: var(--border-width) var(--border-style) var(--accent-color);
+ }
+
+ .t-body-09ee p {
+ margin-bottom: 0;
+ font-size: 0.9rem;
+ opacity: 0.7;
+ }
+
+ /* Responsive Adjustments */
+ @media (max-width: 768px) {
+ h1 { font-size: 2.8rem; }
+ h2 { font-size: 2rem; }
+ h3 { font-size: 1.5rem; }
+
+ .x-top-31ex .m-img-3spl {
+ flex-direction: column;
+ gap: var(--gap);
+ }
+
+ .k-hero-oyqb-title {
+ width: 100%;
+ justify-content: center;
+ margin-bottom: var(--gap);
+ }
+
+ .x-head-a7we {
+ margin-left: 0;
+ width: 100%;
+ }
+
+ .x-head-a7we-list {
+ flex-direction: column;
+ align-items: center;
+ gap: calc(var(--gap) / 2);
+ }
+
+ .t-main-yfyo-nav-toggle {
+ display: block;
+ position: absolute;
+ top: 50%;
+ right: var(--padding);
+ transform: translateY(-50%);
+ }
+
+ .x-top-31ex .x-head-a7we {
+ display: none; /* Hide desktop nav by default on mobile */
+ width: 100%;
+ }
+
+ .x-top-31ex .x-head-a7we.x-head-a7we-open {
+ display: block;
+ }
+
+ .k-ico-juw6 h1 {
+ font-size: 3rem;
+ }
+
+ .k-ico-juw6 p {
+ font-size: 1rem;
+ }
+
+ .x-card-rjtu-grid,
+ .x-side-rlxj-list,
+ .x-nav-yx4o-list {
+ grid-template-columns: 1fr;
+ }
+
+ .k-wrap-af6c-list {
+ grid-template-columns: 1fr;
+ }
+
+ .k-wrap-af6c-item {
+ border-left: none;
+ border-bottom: var(--border-width) var(--border-style) var(--accent-color);
+ padding-bottom: var(--gap);
+ margin-bottom: var(--gap);
+ transform: none;
+ }
+ .k-wrap-af6c-item:last-child {
+ margin-bottom: 0;
+ border-bottom: none;
+ }
+ .k-wrap-af6c-section {
+ transform: none;
+ }
+ .k-wrap-af6c-section::before {
+ transform: none;
+ top: 5px;
+ right: 5px;
+ opacity: 0.3;
+ }
+
+ .k-main-ib8m-bio {
+ flex-direction: column;
+ text-align: center;
+ transform: none;
+ box-shadow: 3px 3px 0 var(--accent-color);
+ }
+ }
+ </style>
 </head>
 <body>
-    <header class="x-top-31ex">
-        <div class="m-img-3spl">
-            <div class="k-hero-oyqb-title">
-                <span>L</span>EDGER
-            </div>
-            <nav class="x-head-a7we">
-                <ul class="x-head-a7we-list">
-                    <li class="x-head-a7we-item"><a href="#categories">카테고리</a></li>
-                    <li class="x-head-a7we-item"><a href="#selection">선택 기준</a></li>
-                    <li class="x-head-a7we-item"><a href="#faq">FAQ</a></li>
-                </ul>
-            </nav>
-            <button class="t-main-yfyo-nav-toggle" aria-label="Navigation Toggle">&#9776;</button>
-        </div>
-    </header>
+ <header class="x-top-31ex">
+ <div class="m-img-3spl">
+ <div class="k-hero-oyqb-title">
+ <span>L</span>EDGER
+ </div>
+ <nav class="x-head-a7we">
+ <ul class="x-head-a7we-list">
+ <li class="x-head-a7we-item"><a href="#categories">카테고리</a></li>
+ <li class="x-head-a7we-item"><a href="#selection">선택 기준</a></li>
+ <li class="x-head-a7we-item"><a href="#faq">FAQ</a></li>
+ </ul>
+ </nav>
+ <button class="t-main-yfyo-nav-toggle" aria-label="Navigation Toggle">&#9776;</button>
+ </div>
+ </header>
 
-    <main>
-        <section class="k-ico-juw6">
-            <div class="m-img-3spl">
-                <h1>접대 장소 추천<br>상황별 최적의 공간 찾기</h1>
-                <p>
-                    비즈니스 접대, 회식, 특별한 모임에 어울리는 장소를 찾고 계신가요?
-                    <br>
-                    다양한 업종의 특징을 명확히 이해하고 최적의 선택을 하도록 돕겠습니다.
-                </p>
-            </div>
-        </section>
+ <main>
+ <section class="k-ico-juw6">
+ <div class="m-img-3spl">
+ <h1>접대 장소 추천<br>상황별 최적의 공간 찾기</h1>
+ <p>
+ 비즈니스 접대, 회식, 특별한 모임에 어울리는 장소를 찾고 계신가요?
+ <br>
+ 다양한 업종의 특징을 명확히 이해하고 최적의 선택을 하도록 돕겠습니다.
+ </p>
+ </div>
+ </section>
 
-        <section id="categories" class="v-head-im4h">
-            <div class="m-img-3spl">
-                <h2 class="k-head-s518-title">업종별 특징 탐색</h2>
-                <ul class="x-side-rlxj-list">
-                    <li class="x-side-rlxj-item">
-                        <h3>셔츠룸</h3>
-                        <p>프라이빗한 공간에서 편안한 대화를 위한 시설.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>룸싸롱</h3>
-                        <p>고급스러운 분위기와 전문적인 서비스 제공.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>텐프로/텐카페</h3>
-                        <p>세련된 인테리어와 수준 높은 서비스를 갖춘 공간.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>쩜오/하이퍼블릭</h3>
-                        <p>다양한 연령층과 취향을 만족시키는 유연한 분위기.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>풀싸롱</h3>
-                        <p>독특한 컨셉과 특별한 경험을 제공하는 장소.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>가라오케/노래방</h3>
-                        <p>음악과 함께 즐거운 시간을 보낼 수 있는 엔터테인먼트 시설.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>비즈니스클럽</h3>
-                        <p>격식 있는 비즈니스 미팅 및 네트워킹에 적합한 환경.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>마사지</h3>
-                        <p>휴식과 재충전을 위한 전문적인 테라피 서비스.</p>
-                    </li>
-                    <li class="x-side-rlxj-item">
-                        <h3>펍</h3>
-                        <p>캐주얼한 분위기에서 가벼운 모임을 즐길 수 있는 장소.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+ <section id="categories" class="v-head-im4h">
+ <div class="m-img-3spl">
+ <h2 class="k-head-s518-title">업종별 특징 탐색</h2>
+ <ul class="x-side-rlxj-list">
+ <li class="x-side-rlxj-item">
+ <h3>셔츠룸</h3>
+ <p>프라이빗한 공간에서 편안한 대화를 위한 시설.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>룸싸롱</h3>
+ <p>고급스러운 분위기와 전문적인 서비스 제공.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>텐프로/텐카페</h3>
+ <p>세련된 인테리어와 수준 높은 서비스를 갖춘 공간.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>쩜오/하이퍼블릭</h3>
+ <p>다양한 연령층과 취향을 만족시키는 유연한 분위기.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>풀싸롱</h3>
+ <p>독특한 컨셉과 특별한 경험을 제공하는 장소.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>가라오케/노래방</h3>
+ <p>음악과 함께 즐거운 시간을 보낼 수 있는 엔터테인먼트 시설.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>비즈니스클럽</h3>
+ <p>격식 있는 비즈니스 미팅 및 네트워킹에 적합한 환경.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>마사지</h3>
+ <p>휴식과 재충전을 위한 전문적인 테라피 서비스.</p>
+ </li>
+ <li class="x-side-rlxj-item">
+ <h3>펍</h3>
+ <p>캐주얼한 분위기에서 가벼운 모임을 즐길 수 있는 장소.</p>
+ </li>
+ </ul>
+ </div>
+ </section>
 
-        <section class="x-card-rjtus">
-            <div class="m-img-3spl">
-                <h2 class="k-head-s518-title">최신 정보</h2>
-                <div class="x-card-rjtu-grid">
-                    <article class="x-card-rjtu-item">
-                        <h3 class="x-card-rjtu-title">비즈니스 만찬: 룸싸롱 vs 비즈니스클럽</h3>
-                        <span class="x-card-rjtu-meta">2023년 10월 27일</span>
-                        <p class="x-card-rjtu-excerpt">
-                            중요한 비즈니스 만찬 시, 격식과 편안함 사이에서 어떤 공간을 선택해야 할까요? 룸싸롱과 비즈니스클럽의 특징을 비교 분석합니다.
-                        </p>
-                        <a href="#" class="x-card-rjtu-link">더 보기</a>
-                    </article>
-                    <article class="x-card-rjtu-item">
-                        <h3 class="x-card-rjtu-title">가족 모임 장소: 노래방 vs 펍</h3>
-                        <span class="x-card-rjtu-meta">2023년 10월 25일</span>
-                        <p class="x-card-rjtu-excerpt">
-                            세대 간 화합을 위한 가족 모임에는 어떤 장소가 적합할까요? 즐거움과 편안함을 동시에 만족시키는 노래방과 펍을 비교합니다.
-                        </p>
-                        <a href="#" class="x-card-rjtu-link">더 보기</a>
-                    </article>
-                    <article class="x-card-rjtu-item">
-                        <h3 class="x-card-rjtu-title">캐주얼 회식: 텐카페와 하이퍼블릭의 차이점</h3>
-                        <span class="x-card-rjtu-meta">2023년 10월 23일</span>
-                        <p class="x-card-rjtu-excerpt">
-                            편안하면서도 특별한 분위기의 회식을 원하신다면, 텐카페와 하이퍼블릭을 고려해보세요. 각 공간의 장단점을 상세히 안내합니다.
-                        </p>
-                        <a href="#" class="x-card-rjtu-link">더 보기</a>
-                    </article>
-                </div>
-            </div>
-        </section>
+ <section class="x-card-rjtus">
+ <div class="m-img-3spl">
+ <h2 class="k-head-s518-title">최신 정보</h2>
+ <div class="x-card-rjtu-grid">
+ <article class="x-card-rjtu-item">
+ <h3 class="x-card-rjtu-title">비즈니스 만찬: 룸싸롱 vs 비즈니스클럽</h3>
+ <span class="x-card-rjtu-meta">2023년 10월 27일</span>
+ <p class="x-card-rjtu-excerpt">
+ 중요한 비즈니스 만찬 시, 격식과 편안함 사이에서 어떤 공간을 선택해야 할까요? 룸싸롱과 비즈니스클럽의 특징을 비교 분석합니다.
+ </p>
+ <a href="#" class="x-card-rjtu-link">더 보기</a>
+ </article>
+ <article class="x-card-rjtu-item">
+ <h3 class="x-card-rjtu-title">가족 모임 장소: 노래방 vs 펍</h3>
+ <span class="x-card-rjtu-meta">2023년 10월 25일</span>
+ <p class="x-card-rjtu-excerpt">
+ 세대 간 화합을 위한 가족 모임에는 어떤 장소가 적합할까요? 즐거움과 편안함을 동시에 만족시키는 노래방과 펍을 비교합니다.
+ </p>
+ <a href="#" class="x-card-rjtu-link">더 보기</a>
+ </article>
+ <article class="x-card-rjtu-item">
+ <h3 class="x-card-rjtu-title">캐주얼 회식: 텐카페와 하이퍼블릭의 차이점</h3>
+ <span class="x-card-rjtu-meta">2023년 10월 23일</span>
+ <p class="x-card-rjtu-excerpt">
+ 편안하면서도 특별한 분위기의 회식을 원하신다면, 텐카페와 하이퍼블릭을 고려해보세요. 각 공간의 장단점을 상세히 안내합니다.
+ </p>
+ <a href="#" class="x-card-rjtu-link">더 보기</a>
+ </article>
+ </div>
+ </div>
+ </section>
 
-        <section id="selection" class="x-side-lsrh-criteria">
-            <div class="m-img-3spl">
-                <h2 class="k-head-s518-title">나에게 맞는 장소 선택 가이드</h2>
-                <div class="k-wrap-af6c-section">
-                    <h3 class="k-wrap-af6c-title">주요 고려사항</h3>
-                    <ul class="k-wrap-af6c-list">
-                        <li class="k-wrap-af6c-item"><strong>목적</strong>: 비즈니스, 친목, 휴식 등 명확한 목적 설정</li>
-                        <li class="k-wrap-af6c-item"><strong>참석자</strong>: 연령대, 성별, 관계 등을 고려한 분위기 선택</li>
-                        <li class="k-wrap-af6c-item"><strong>분위기</strong>: 격식, 캐주얼, 엔터테인먼트 등 원하는 분위기</li>
-                        <li class="k-wrap-af6c-item"><strong>예산</strong>: 1인당 예상 비용 고려</li>
-                    </ul>
-                </div>
-                <div class="x-nav-yx4o-section">
-                    <h3 class="x-nav-yx4o-title">이용 전 확인사항</h3>
-                    <ul class="x-nav-yx4o-list">
-                        <li class="x-nav-yx4o-item">
-                            <strong>서비스 내용</strong>: 제공되는 서비스의 범위와 질 확인
-                        </li>
-                        <li class="x-nav-yx4o-item">
-                            <strong>시설</strong>: 공간의 크기, 독립성, 편의시설 등 점검
-                        </li>
-                        <li class="x-nav-yx4o-item">
-                            <strong>이용 시간</strong>: 최대 이용 가능 시간 및 연장 옵션 확인
-                        </li>
-                        <li class="x-nav-yx4o-item">
-                            <strong>기타 규정</strong>: 복장 규정, 반입 금지 품목 등 사전 숙지
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+ <section id="selection" class="x-side-lsrh-criteria">
+ <div class="m-img-3spl">
+ <h2 class="k-head-s518-title">나에게 맞는 장소 선택 가이드</h2>
+ <div class="k-wrap-af6c-section">
+ <h3 class="k-wrap-af6c-title">주요 고려사항</h3>
+ <ul class="k-wrap-af6c-list">
+ <li class="k-wrap-af6c-item"><strong>목적</strong>: 비즈니스, 친목, 휴식 등 명확한 목적 설정</li>
+ <li class="k-wrap-af6c-item"><strong>참석자</strong>: 연령대, 성별, 관계 등을 고려한 분위기 선택</li>
+ <li class="k-wrap-af6c-item"><strong>분위기</strong>: 격식, 캐주얼, 엔터테인먼트 등 원하는 분위기</li>
+ <li class="k-wrap-af6c-item"><strong>예산</strong>: 1인당 예상 비용 고려</li>
+ </ul>
+ </div>
+ <div class="x-nav-yx4o-section">
+ <h3 class="x-nav-yx4o-title">이용 전 확인사항</h3>
+ <ul class="x-nav-yx4o-list">
+ <li class="x-nav-yx4o-item">
+ <strong>서비스 내용</strong>: 제공되는 서비스의 범위와 질 확인
+ </li>
+ <li class="x-nav-yx4o-item">
+ <strong>시설</strong>: 공간의 크기, 독립성, 편의시설 등 점검
+ </li>
+ <li class="x-nav-yx4o-item">
+ <strong>이용 시간</strong>: 최대 이용 가능 시간 및 연장 옵션 확인
+ </li>
+ <li class="x-nav-yx4o-item">
+ <strong>기타 규정</strong>: 복장 규정, 반입 금지 품목 등 사전 숙지
+ </li>
+ </ul>
+ </div>
+ </div>
+ </section>
 
-        <section id="faq" class="v-hero-ivf2-section">
-            <div class="m-img-3spl">
-                <h2 class="k-head-s518-title">자주 묻는 질문</h2>
-                <div class="v-hero-ivf2-item">
-                    <h3 class="v-hero-ivf2-question">접대 장소 선택 시 가장 중요하게 고려해야 할 요소는 무엇인가요?</h3>
-                    <p class="v-hero-ivf2-answer">
-                        가장 중요한 것은 '목적'과 '참석자'입니다. 누구를 위한 자리인지, 어떤 분위기를 연출하고 싶은지에 따라 적합한 업종과 공간이 달라집니다. 사전에 명확한 기준을 세우는 것이 중요합니다.
-                    </p>
-                </div>
-                <div class="v-hero-ivf2-item">
-                    <h3 class="v-hero-ivf2-question">다양한 업종의 차이점을 어떻게 구분할 수 있나요?</h3>
-                    <p class="v-hero-ivf2-answer">
-                        각 업종은 제공하는 서비스의 성격, 분위기, 이용 목적 등에서 고유한 특징을 가집니다. 저희 블로그에서는 각 업종별 특징을 명확히 비교 분석하여, 목적에 맞는 장소를 쉽게 선택하실 수 있도록 돕습니다.
-                    </p>
-                </div>
-                <div class="v-hero-ivf2-item">
-                    <h3 class="v-hero-ivf2-question">예약이나 특정 업소 추천 없이 정보를 얻을 수 있나요?</h3>
-                    <p class="v-hero-ivf2-answer">
-                        네, 본 블로그는 특정 업소나 지역을 홍보하는 목적이 아닌, 순수 정보 제공에 초점을 맞추고 있습니다. 전화번호 안내나 예약 유도 없이 객관적인 정보만을 제공합니다.
-                    </p>
-                </div>
-            </div>
-        </section>
+ <section id="faq" class="v-hero-ivf2-section">
+ <div class="m-img-3spl">
+ <h2 class="k-head-s518-title">자주 묻는 질문</h2>
+ <div class="v-hero-ivf2-item">
+ <h3 class="v-hero-ivf2-question">접대 장소 선택 시 가장 중요하게 고려해야 할 요소는 무엇인가요?</h3>
+ <p class="v-hero-ivf2-answer">
+ 가장 중요한 것은 '목적'과 '참석자'입니다. 누구를 위한 자리인지, 어떤 분위기를 연출하고 싶은지에 따라 적합한 업종과 공간이 달라집니다. 사전에 명확한 기준을 세우는 것이 중요합니다.
+ </p>
+ </div>
+ <div class="v-hero-ivf2-item">
+ <h3 class="v-hero-ivf2-question">다양한 업종의 차이점을 어떻게 구분할 수 있나요?</h3>
+ <p class="v-hero-ivf2-answer">
+ 각 업종은 제공하는 서비스의 성격, 분위기, 이용 목적 등에서 고유한 특징을 가집니다. 저희 블로그에서는 각 업종별 특징을 명확히 비교 분석하여, 목적에 맞는 장소를 쉽게 선택하실 수 있도록 돕습니다.
+ </p>
+ </div>
+ <div class="v-hero-ivf2-item">
+ <h3 class="v-hero-ivf2-question">예약이나 특정 업소 추천 없이 정보를 얻을 수 있나요?</h3>
+ <p class="v-hero-ivf2-answer">
+ 네, 본 블로그는 특정 업소나 지역을 홍보하는 목적이 아닌, 순수 정보 제공에 초점을 맞추고 있습니다. 전화번호 안내나 예약 유도 없이 객관적인 정보만을 제공합니다.
+ </p>
+ </div>
+ </div>
+ </section>
 
-        <div class="m-img-3spl">
-            <div class="k-main-ib8m-bio">
-                <div class="k-main-ib8m-info">
-                    <div class="k-main-ib8m-name">로컬 큐레이터 K</div>
-                    <p class="k-main-ib8m-description">서울 지역의 다양한 접대 및 모임 공간 정보를 5년간 전문적으로 분석하고 큐레이션해온 경험을 바탕으로 객관적인 정보를 제공합니다.</p>
-                </div>
-            </div>
-        </div>
-    </main>
+ <div class="m-img-3spl">
+ <div class="k-main-ib8m-bio">
+ <div class="k-main-ib8m-info">
+ <div class="k-main-ib8m-name">로컬 큐레이터 K</div>
+ <p class="k-main-ib8m-description">서울 지역의 다양한 접대 및 모임 공간 정보를 5년간 전문적으로 분석하고 큐레이션해온 경험을 바탕으로 객관적인 정보를 제공합니다.</p>
+ </div>
+ </div>
+ </div>
+ </main>
 
-    
+ 
 <section class="xlyofos" aria-label="최신 글 피드" style="padding:60px 20px;border-top:1px solid rgba(128,128,128,.18);border-bottom:1px solid rgba(128,128,128,.18)">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:inherit;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article data-rpc="1" class="xlyofoc" style="background:transparent;border-radius:12px;padding:24px;border:1px solid rgba(128,128,128,.2);transition:transform 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;opacity:.6">
-          <span>GUIDE</span>
-          <time datetime="2026-07-26">2026-07-26</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:inherit;margin-bottom:8px;line-height:1.4">정보 블로그 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
-        <p style="font-size:0.875rem;opacity:.8;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">서울 내에서 중요한 비즈니스 미팅이나 외빈 접대를 준비할 때는 성공적인 모임을 위해 다각도로 고려해야 할 요소가 많습니다. 상대방의 취향과 모임의 성격에 부합하는 장소를 선택하는 것은 단순한 식사 자리를 넘어 신뢰 관계를 형성하는 핵심 과정입니다. 특히 이동 동선과 독립된 공간 여부,…</p>
-      </div>
-      <a href="posts/guide-001-9lciey.html" style="align-self:flex-start;text-decoration:none;color:inherit;opacity:.85;font-size:0.9rem;font-weight:600;transition:opacity 0.2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
+ <div style="max-width:1100px;margin:0 auto">
+ <h3 style="font-size:1.5rem;font-weight:800;color:inherit;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">최신 관련 포스트</h3>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+ 
+ <article data-rpc="1" class="xlyofoc" style="background:transparent;border-radius:12px;padding:24px;border:1px solid rgba(128,128,128,.2);transition:transform 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;opacity:.6">
+ <span>GUIDE</span>
+ <time datetime="2026-07-26">2026-07-26</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:inherit;margin-bottom:8px;line-height:1.4">정보 블로그 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
+ <p style="font-size:0.875rem;opacity:.8;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">서울 내에서 중요한 비즈니스 미팅이나 외빈 접대를 준비할 때는 성공적인 모임을 위해 다각도로 고려해야 할 요소가 많습니다. 상대방의 취향과 모임의 성격에 부합하는 장소를 선택하는 것은 단순한 식사 자리를 넘어 신뢰 관계를 형성하는 핵심 과정입니다. 특히 이동 동선과 독립된 공간 여부,…</p>
+ </div>
+ <a href="posts/guide-001-9lciey.html" style="align-self:flex-start;text-decoration:none;color:inherit;opacity:.85;font-size:0.9rem;font-weight:600;transition:opacity 0.2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">자세히 보기 →</a>
+ </article>
+ </div>
+ </div>
 </section>
 <footer class="t-body-09ee">
-        <div class="m-img-3spl">
-            <p>&copy; 2023 ledger.link-hub.org. All rights reserved.</p>
-        </div>
-    </footer>
+ <div class="m-img-3spl">
+ <p>&copy; 2023 ledger.link-hub.org. All rights reserved.</p>
+ </div>
+ </footer>
 
-    <script>
-        const mobileNavToggle = document.querySelector('.t-main-yfyo-nav-toggle');
-        const nav = document.querySelector('.x-head-a7we');
+ <script>
+ const mobileNavToggle = document.querySelector('.t-main-yfyo-nav-toggle');
+ const nav = document.querySelector('.x-head-a7we');
 
-        mobileNavToggle.addEventListener('click', () => {
-            nav.classList.toggle('x-head-a7we-open');
-        });
-    </script>
+ mobileNavToggle.addEventListener('click', () => {
+ nav.classList.toggle('x-head-a7we-open');
+ });
+ </script>
 </body>
 </html>
