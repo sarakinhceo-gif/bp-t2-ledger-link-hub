@@ -36,6 +36,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ledger.link-hub.org/posts/gemini-coverage-20260921-0001.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ledger.link-hub.org/posts/guide-001-9lciey.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
